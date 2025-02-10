@@ -43,7 +43,7 @@ public class SendSMS extends AbstractProcessor {
     //--------------------------------------------------------------
     public void writeOutFile(String msg) {
         String text = msg + "\n";
-        String filePath = "d://Work//tmp//notes.txt";
+        String filePath = "";
         try {
             Files.write(Paths.get(filePath), text.getBytes(), StandardOpenOption.APPEND);
         }
